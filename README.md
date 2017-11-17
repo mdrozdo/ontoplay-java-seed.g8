@@ -1,21 +1,25 @@
-# play-java-seed.g8
+# ontoplay-java-seed.g8
 
-Giter8 template for generating a Play project in Java.
+Giter8 template for generating a Play project using [OntoPlay](https://github.com/mdrozdo/OntoPlay) in Java.
 
-This project is intended for people who know how to use Play and want to get started right away.
-
-You should only need to clone this project if you are modifying the giter8 template.  For information on giter8 templates, please see http://www.foundweekends.org/giter8/
+This template is built on the default [play-java-seed.g8 template](https://github.com/playframework/play-java-seed.g8).
 
 ## Running
 
-If you want to create a project:
+If you want to create a project, run:
 
 ```
-sbt new playframework/play-java-seed.g8
+sbt new mdrozdo/ontoplay-java-seed.g8
+
+```
+
+Then cd into the generated project folder and fetch the ontoplay module:
+
+```
+sbt getOntoPlay
+sbt run
 ```
 
 ## Scaffolding 
 
 Type `g8Scaffold form` from sbt to create the scaffold controller, template and tests needed to process a form.
-
-You can also create your own giter8 seeds and scaffolds based off this one by forking from the https://github.com/playframework/play-java-seed.g8 or https://github.com/playframework/play-scala-seed.g8 github projects.
